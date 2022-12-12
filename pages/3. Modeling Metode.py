@@ -25,8 +25,7 @@ from scipy import stats
 # px.defaults.template = "plotly_dark"
 # px.defaults.color_continuous_scale = "reds"
 
-st.markdown("# 3. Modeling Data")
-     # ambil data
+# ambil data
 data = pd.read_csv("https://raw.githubusercontent.com/077nabila/app_pendat/main/Real%20estate.csv")
 
 #diskritisasi data
