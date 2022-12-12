@@ -25,15 +25,13 @@ from scipy import stats
 # px.defaults.template = "plotly_dark"
 # px.defaults.color_continuous_scale = "reds"
 
-st.markdown("#4. Implementasi Model")
+st.markdown("# 4. Implementasi Model")
 
 
 # st.header("Input Data Sample")
 # datain = st.text_input('Masukkan dataset', '')
-st.title("Implementasi Model")
-st.write("Sebagai bahan eksperimen silahkan inputkan beberapa data yang akan digunakan sebagai data testing untuk pengklasifikasian")
 
-st.header("Input Data Testing")
+st.header("Input Data")
 # create input
 t = st.number_input("Transaction Date")
 ha = st.number_input("House Age")
@@ -207,7 +205,7 @@ def submit():
         # else:
         #     st.write("Hasil Klasifikaisi : top 33")
 
-submitted = st.button("Submit")
+submitted = st.button("Prediksi")
 if submitted:
     submit()
 
