@@ -25,7 +25,7 @@ st.write('''
                 \nSaya Nabila Regitasyari Irmawan dengan nomor induk mahasiswa 200411100077.  
                 \nKali ini saya akan mencoba melakukan penambangan data dan harga perumahan berdasarkan latitude, longitude, dan house age
                 
-                \nP**Apakah yang dimaksud dengan Data Mining???**
+                \n**Apakah yang dimaksud dengan Data Mining???**
                 \nData Mining adalah proses pengumpulan dan pengolahan data yang bertujuan untuk mengekstrak informasi penting pada data.
                 
                 \nUntuk pertanyaan lebih lanjut bisa menghubungi saya melalui :
