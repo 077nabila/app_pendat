@@ -14,7 +14,11 @@ st.container()
 st.write(''' 
             Nama : Nabila Regitasyari Irmawan
             \nNim  : 200411100077
-            /nKelas : Penambangan Data B
+            \nKelas : Penambangan Data B
+            
+            \n**Berikut adalah akun Email saya :**
+            \nEmail : nabilaregitasya@gmail.com 
+             
 
         ''')
            
