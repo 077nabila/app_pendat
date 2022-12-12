@@ -15,6 +15,8 @@ st.write('''
             Nama : Nabila Regitasyari Irmawan
             \nNim  : 200411100077
             /nKelas : Penambangan Data B
+
+        ''')
            
 
 
