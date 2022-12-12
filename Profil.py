@@ -9,14 +9,30 @@ from sklearn.utils.validation import joblib
 # px.defaults.color_continuous_scale = "reds"
 
 # create content
-st.title("Profil Saya")
-st.container()
-st.title('Prediksi Kelayakan Untuk Pinjaman Rumah')
+st.title('Prediksi harga perumahan berdasarkan latitude, longitude, dan house age')
 st.write("========================================================================================")
 st.write("""
-Selamat datang di aplikasi Prediksi Kelayakan Untuk Pinjaman Rumah
-\nAplikasi ini untuk memprediksi Kelayakan Pinjaman Rumah, apakah pelanggan layak untuk melakukan pinjaman rumah atau tidak layak untuk melakukan pinjaman rumah
+Selamat datang di aplikasi Prediksi Harga perumahan berdasarkan latitude, longitude, dan house age
+\nAplikasi ini untuk memprediksi harga perumahan berdasarkan latitude, longitude, dan house age
 """)
+
+# create content
+with tab1:
+    st.write("""
+    <h5>Profil</h5>
+    """, unsafe_allow_html=True)
+    st.container()
+    st.write(''' 
+                \nSaya Nabila Regitasyari Irmawan dengan nomor induk mahasiswa 200411100077.  
+                \nKali ini saya akan mencoba melakukan penambangan data dan harga perumahan berdasarkan latitude, longitude, dan house age
+                \nApakah yang dimaksud dengan Data Mining???
+                \nData Mining adalah proses pengumpulan dan pengolahan data yang bertujuan untuk mengekstrak informasi penting pada data.
+                
+                \nUntuk pertanyaan lebih lanjut bisa menghubungi saya melalui :
+                \nEmail : nabilaregitasya@gmail.com  
+                \nInstagram : @nabillaaree 
+                \nSemoga bermanfaat:>
+            ''')
            
 
 
