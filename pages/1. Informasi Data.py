@@ -8,7 +8,6 @@ from sklearn.utils.validation import joblib
 # px.defaults.template = "plotly_dark"
 # px.defaults.color_continuous_scale = "reds"
 
-st.markdown("# 1. Informasi Data")
 # create content
 st.title("Real estate price prediction")
 st.container()
