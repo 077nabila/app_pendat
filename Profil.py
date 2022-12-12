@@ -17,12 +17,11 @@ Selamat datang di aplikasi Prediksi Harga perumahan berdasarkan latitude, longit
 """)
 
 # create content
-with tab1:
-    st.write("""
-    <h5>Profil</h5>
-    """, unsafe_allow_html=True)
-    st.container()
-    st.write(''' 
+# create content
+st.markdown("#Profil")
+st.title("Profil Saya")
+st.container()
+st.write(''' 
                 \nSaya Nabila Regitasyari Irmawan dengan nomor induk mahasiswa 200411100077.  
                 \nKali ini saya akan mencoba melakukan penambangan data dan harga perumahan berdasarkan latitude, longitude, dan house age
                 \nApakah yang dimaksud dengan Data Mining???
