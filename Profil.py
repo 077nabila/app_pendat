@@ -9,7 +9,7 @@ from sklearn.utils.validation import joblib
 # px.defaults.color_continuous_scale = "reds"
 
 # create content
-st.markdown("#Profil")
+st.markdown("# Profil")
 st.title("Profil Saya")
 st.container()
 st.write(''' 
