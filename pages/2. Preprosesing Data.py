@@ -25,8 +25,6 @@ from scipy import stats
 # px.defaults.template = "plotly_dark"
 # px.defaults.color_continuous_scale = "reds"
 
-st.markdown("# 2. Preprosesing Data")
-
 
 # st.header("Input Data Sample")
 # datain = st.text_input('Masukkan dataset', '')
