@@ -115,20 +115,6 @@ with K_Nearest_Naighbour:
     \n* Hitung jarak dari data baru ke masing-masing data point di dataset. Ambil sejumlah K data dengan jarak terdekat, kemudian tentukan kelas dari data baru tersebut.
     \n* Untuk mencari dekat atau jauhnya jarak antar titik pada kelas k biasanya dihitung menggunakan jarak Euclidean. Jarak Euclidean adalah formula untuk mencari jarak antara 2 titik dalam ruang dua dimensi.
     """)
-    st.header("Pengkodean")
-    st.text("""
-    my_param_grid = {'n_neighbors':[2,3,5,7], 'weights': ['distance', 'uniform']}
-    GridSearchCV(estimator=KNeighborsClassifier(), param_grid=my_param_grid, refit=True, verbose=3, cv=3)
-    knn = GridSearchCV(KNeighborsClassifier(), param_grid=my_param_grid, refit=True, verbose=3, cv=3)
-    knn.fit(X_train, y_train)
-
-    filenameModelKnnNorm = 'modelKnn.pkl'
-    joblib.dump(knn, filenameModelKnnNorm)
-
-    pred_test = knn.predict(X_test)
-
-    vknn = f'Hasil akurasi dari pemodelan K-Nearest Neighbour : {accuracy_score(y_test, pred_test) * 100 :.2f} %'
-    """)
     st.header("Hasil Akurasi")
     st.write(vknn)
     
@@ -140,55 +126,17 @@ with Gausian:
     Naive Bayes adalah algoritma machine learning untuk masalah klasifikasi. Ini didasarkan pada teorema probabilitas Bayes. Hal ini digunakan untuk klasifikasi teks yang melibatkan set data pelatihan dimensi tinggi. Beberapa contohnya adalah penyaringan spam, analisis sentimental, dan klasifikasi artikel berita.
     Algoritma Naive Bayes adalah teknik klasifikasi berdasarkan penerapan teorema Bayes dengan asumsi kuat bahwa semua prediktor independen satu sama lain. Secara sederhana dengan kata lain, asumsinya adalah bahwa kehadiran fitur di kelas tidak tergantung pada kehadiran fitur lain di kelas yang sama.
     """)
-    st.header("Pengkodean")
-    st.text("""
-    from sklearn.naive_bayes import GaussianNB
-    gnb = GaussianNB()
-    gnb.fit(X_train, y_train)
-
-    filenameModelGau = 'modelGauNB.pkl'
-    joblib.dump(gnb, filenameModelGau)
-
-    y_pred = gnb.predict(X_test)
-
-    vg = f'Hasil akurasi dari pemodelan Gausian : {accuracy_score(y_test, y_pred) * 100 :.2f} %'
-        """)
     st.header("Hasil Akurasi")
     st.write(vg)   
 
 with Decision_Tree:
     st.header("Decision Tree")
     st.write("Decision tree merupakan alat pendukung keputusan dengan struktur seperti pohon yang memodelkan kemungkinan hasil, biaya sumber daya, utilitas, dan kemungkinan konsekuensi. Konsepnya adalah dengan cara menyajikan algoritma dengan pernyataan bersyarat yang meliputi cabang untuk mewakili langkah-langkah pengambilan keputusan yang dapat mengarah pada hasil yang menguntungkan. Biasanya decision tree dimulai dari satu node atau satu simpul. Kemudian node tersebut bercabang untuk memberikan pilihan-pilihan Tindakan yang lain. Selanjutnya node tersebut akan memiliki cabang-cabang baru. Dalam pembuatan node atau cabang baru akan terus di ulang sampai kriteria berhenti dipenuhi. Decision tree biasanya dapat memperoses dataset yang berisi atribut nominal atau numerik. Label attribute harus berbentuk nominal untuk proses klasifikasi dan berbentuk numerik untuk regresi.")
-    st.header("Pengkodean")
-    st.text(""" 
-    from sklearn.tree import DecisionTreeClassifier
-    d3 = DecisionTreeClassifier()
-    d3.fit(X_train, y_train)
-
-    filenameModelDT = 'modelDT.pkl'
-    joblib.dump(d3, filenameModelDT)
-
-    y_pred = d3.predict(X_test)
-
-    vd3 = f'Hasil akurasi dari pemodelan decision tree : {accuracy_score(y_test, y_pred) * 100 :.2f} %'
-    """)
     st.header("Hasil Akurasi")
     st.write(vd3)   
 
 with Random_Forest:
     st.header("Random Forest")
     st.write("Prinsip utama K-Means adalah menyusun k prototype atau pusat massa (centroid) dari sekumpulan data berdimensi. \nSebelum diterapkan proses algoritma K-means, dokumen akan di preprocessing terlebih dahulu. Kemudian dokumen direpresentasikan sebagai vektor yang memiliki term dengan nilai tertentu.")
-    st.header("Pengkodean")
-    st.text(""" 
-    from sklearn.ensemble import RandomForestClassifier
-    clf = RandomForestClassifier(n_estimators=14, max_depth=2, random_state=0)
-    clf = clf.fit(X_train, y_train)
-
-    filenameModelrmf = 'modelrmf.pkl'
-    joblib.dump(d3, filenameModelrmf)
-
-    y_test_pred = clf.predict(X_test)
-    rmf = f'Hasil akurasi dari pemodelan Random Forest Classifier : {accuracy_score(y_test, y_test_pred) * 100 :.2f} %'
-    """)
     st.header("Hasil Akurasi")
     st.write(rmf)
